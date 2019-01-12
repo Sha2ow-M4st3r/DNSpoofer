@@ -18,17 +18,15 @@ Scapy is a powerful interactive packet manipulation program. It is able to forge
 
 DNS spoofing, also referred to as DNS cache poisoning, is a form of computer security hacking in which corrupt Domain Name System data is introduced into the DNS resolver's cache, causing the name server to return an incorrect result record, e.g. an IP address. This results in traffic being diverted to the attacker's computer (or any other computer).
 
-![Screenshot](http://s8.picofile.com/file/8348692168/dns_spoofing.png)
+![Screenshot](http://s9.picofile.com/file/8348693650/dns_spoofing.png)
 
 [For more info in wikipedia](https://en.wikipedia.org/wiki/DNS_spoofing)
 
 
 ## Screenshots
 
-![Screenshot](http://s8.picofile.com/file/8348691992/S1.png)
+![Screenshot](http://s9.picofile.com/file/8348693726/S1.png)
 ![Screenshot](http://s9.picofile.com/file/8348692042/S2.png)
-![Screenshot](http://s8.picofile.com/file/8348692050/S3.png)
-![Screenshot](http://s8.picofile.com/file/8348692076/S4.png)
 
 
 ## Installation
