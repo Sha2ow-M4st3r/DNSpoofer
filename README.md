@@ -25,7 +25,7 @@ DNS spoofing, also referred to as DNS cache poisoning, is a form of computer sec
 
 ## Screenshots
 
-![Screenshot](http://s9.picofile.com/file/8348693726/S1.png)
+![Screenshot](https://filebin.net/nf3fnytuj4dpsfdx/S1.png?t=qs8j5f8u)
 ![Screenshot](http://s9.picofile.com/file/8348692042/S2.png)
 
 
