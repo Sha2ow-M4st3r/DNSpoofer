@@ -8,10 +8,14 @@ NOTE2: I think the scapy is not installed by default on your system and you need
 
 NOTE3: The number of values in the ip address list must be the same as the number of values in the domain names list
 
+## Work
 
 Identifying DNS queries using packet.haslayer(DNSQR)
+
 Extracting the domain name and stripping the trailing dot
+
 Checking if the domain is in your spoof list
+
 Building a DNS response packet using Scapy's layering syntax and send it
 
 ## Usage
