@@ -1,9 +1,11 @@
 # DNSpoofer
 
-This is a simple Python script designed to implementing DNS spoofing attacks on the network. It is important to note that the script is not very fast due to the lack of multi-threading. This script is only useful for learning network socket programming in Python and for modeling and implementing it on a small network.
+This is a simple Python script designed to implementing DNS spoofing attacks on the network. It is important to note that the script is not very fast due to the lack of multi-threading. This script is only useful for learning network socket programming in Python with scapy and for modeling and implementing it on a small network.
 
 NOTE1: The script must be run with root access on Linux. 
+
 NOTE2: I think the scapy is not installed by default on your system and you need to install it using APT or PIP. 
+
 NOTE3: The number of values in the ip address list must be the same as the number of values in the domain names list
 
 
