@@ -1,46 +1,20 @@
 # DNSpoofer
 
-![Screenshot](http://s8.picofile.com/file/8348692776/dns_1_202034.png)
+This is a simple Python script designed to implementing DNS spoofing attacks on the network. It is important to note that the script is not very fast due to the lack of multi-threading. This script is only useful for learning network socket programming in Python and for modeling and implementing it on a small network.
 
-DNSpoofer is a python script that allows you to spoofing dns protocol.
-
-## What is Domain Name System
-
-The Domain Name System (DNS) is a hierarchical decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It associates various information with domain names assigned to each of the participating entities. Most prominently, it translates more readily memorized domain names to the numerical IP addresses needed for locating and identifying computer services and devices with the underlying network protocols.[.....](https://en.wikipedia.org/wiki/Domain_Name_System)
-
-## What is Scapy
-
-Scapy is a powerful interactive packet manipulation program. It is able to forge or decode packets of a wide number of protocols, send them on the wire, capture them, match requests and replies, and much more. It can easily handle most classical tasks like scanning, tracerouting, probing, unit tests, attacks or network discovery (it can replace hping, 85% of nmap, arpspoof, arp-sk, arping, tcpdump, tethereal, p0f, etc.). It also performs very well at a lot of other specific tasks that most other tools can’t handle, like sending invalid frames, injecting your own 802.11 frames, combining technics (VLAN hopping+ARP cache poisoning, VOIP decoding on WEP encrypted channel, …), etc.
-
-[More info](https://scapy.net/)
-
-## What is dns spoofing
-
-DNS spoofing, also referred to as DNS cache poisoning, is a form of computer security hacking in which corrupt Domain Name System data is introduced into the DNS resolver's cache, causing the name server to return an incorrect result record, e.g. an IP address. This results in traffic being diverted to the attacker's computer (or any other computer).
-
-![Screenshot](http://s9.picofile.com/file/8348693650/dns_spoofing.png)
-
-[For more info in wikipedia](https://en.wikipedia.org/wiki/DNS_spoofing)
+NOTE1: The script must be run with root access on Linux. 
+NOTE2: I think the scapy is not installed by default on your system and you need to install it using APT or PIP. 
+NOTE3: The number of values in the ip address list must be the same as the number of values in the domain names list
 
 
-## Screenshots
-
-![Screenshot](https://filebin.net/nf3fnytuj4dpsfdx/S1.png?t=qs8j5f8u)
-![Screenshot](http://s9.picofile.com/file/8348692042/S2.png)
-
-
-## Installation
-
-```markdown
-- sudo git clone https://github.com/Sha2ow-M4st3r/DNSpoofer.git
-- cd PSniffer
-- sudo pip install -r requirements.txt
-```
+Identifying DNS queries using packet.haslayer(DNSQR)
+Extracting the domain name and stripping the trailing dot
+Checking if the domain is in your spoof list
+Building a DNS response packet using Scapy's layering syntax and send it
 
 ## Usage
 
 ```markdown
-sudo python DNSpoofer.py <IFace> <Spoofed-IP>
+sudo python3 dnspoof.py --iface <iface> --ipaddr <addresses list> --domain <domain list>
+sudo python3 dnspoof.py --iface vboxnet0 --ipaddr ipaddress.txt --domain domains.txt
 ```
-
-**Never forget: You Can't Run From Your Shadow. But You Can Invite It To Dance**
